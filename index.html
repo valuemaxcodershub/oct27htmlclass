@@ -1,0 +1,372 @@
+<html>
+	<head>
+
+		<style>
+			.amos{
+				background:green;
+				color:white;
+				font-family:pristina;
+				font-size:50px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div style="margin-left:300px">
+			<img src="herobarner.jpg" width="100%" height="200" />
+			<h1 id="htmlclass"> simple calculator </h1>
+			<input type="text" placeholder="enter firstNo" id="firstNo" > <br><br>
+			<input type="text" placeholder="enter secondNo" id="secondNo"> <br><br>
+			
+			<button id="welcomebtn" onclick="changetitle()"> calculate </button>
+			<h2 id="answer"></h2>
+		</div>
+
+		<script type="text/javascript" rel="script">
+
+			let mybody= document.querySelector("body");
+			function changetitle(){
+				let firstNumber= document.getElementById("firstNo").value;
+				let secondNumber= document.getElementById("secondNo").value;
+				let total= firstNumber*secondNumber;
+				let ouranswer=document.getElementById("answer");
+				ouranswer.innerHTML= `the answer is ${total}`;
+				
+				
+			}
+
+			// function removestyle(){
+			// 	mybody.classList.remove("amos")
+			// }
+			
+			//function
+			// function daniel(){
+			// 	console.log('welcome to function')
+			
+			// 	let age= prompt('what is your age?');
+				
+			// 	if(age>30){
+			// 	console.log('you are an adult')
+			// 	}else{
+			// 	console.log('you are a child')
+			// 	}
+			// }
+
+			// let abilitytoVote=  (x,y,k)=>{
+			// 	let age = x-y;
+			// 	let vote= (age>=k)? "you can vote": "you cannot vote";
+			// 	return vote;
+			// }
+
+			// let thisyear = new Date().getFullYear();
+			// let yearofBirth = prompt("which year were you born?");
+
+			// console.log(abilitytoVote(thisyear, yearofBirth, 18))
+		
+
+			//  function fruitProcessor(apples, oranges){
+			// 	const juice = `juice prepare with ${apples} apples and ${oranges} oranges.`;
+			// 	return juice
+			// }
+
+
+			// const applejuice = fruitProcessor(6,2);
+			// console.log(applejuice);
+			
+			// const orangejuice = fruitProcessor(2,8);
+			// console.log(orangejuice);
+
+
+
+
+
+			// function checkAge(age) {
+  			// 	if (age >= 18) {
+    		// 	return true;
+  			// } else {
+    		// 	return confirm('Do you have permission from your parents?');
+ 			//  }
+			// }
+
+
+			// let x= prompt('How old are you?', 18);
+
+
+			// if (checkAge(x)) {
+  			// 	alert( 'Access granted' );
+			// } else {
+ 			// 	 alert("Access Denied" );
+			// }
+
+
+			
+			// let userName;
+			// function testvariable(){
+			// 	 userName = "Paul";
+			// 	console.log(userName)
+			// }
+			
+			// testvariable()
+			// console.log(userName)
+			
+			
+			// let students = {
+			// 	Amos:{
+			// 		age: 20,
+			// 		tribe: 'Hausa',
+			// 		black:true,
+			// 		surName: 'Olanipekun',
+			// 		score:{
+			// 			javascvript:90,
+			// 			css: 40,
+			// 			html:65,
+			// 		},
+			// 		FirstName: 'Amos'
+			// 	},
+			// 	Daniel:{
+			// 		age: 20,
+			// 		tribe: 'Yoruba',
+			// 		black:true,
+			// 		surName: 'Amusan',
+			// 		score:{
+			// 			javascvript:85,
+			// 			css: 35,
+			// 			html:60,
+			// 		},
+			// 		FirstName: 'Daniel'
+			
+			// 	}
+			// }
+
+			
+			
+
+			//ARRAYS
+			// let studentsNames= new Array('Amos', 'Daniel', 'Christy', 'Isaiah');
+			// let studentsRecord= [
+			// 	{
+			// 		Name: 'Amos Ola',
+			// 		Age: 20,
+			// 		Tribe: 'Hausa',
+			// 		Score: {
+			// 			javascript: 90,
+			// 			css: 40,
+			// 			html: 65
+			// 		}
+			// 	},
+			// 	{
+			// 		Name: 'Daniel Amusan',
+			// 		Age: 20,
+			// 		Tribe: 'Yoruba',
+			// 		Score: {
+			// 			javascript: 85,
+			// 			css: 35,
+			// 			html: 60
+			// 		}
+			// 	}
+			// ];
+
+			// console.log(`${studentsRecord[1].Name} scored ${studentsRecord[1].Score.javascript}% in javascript`);
+			
+
+// 			const ibadanRestaurants = [
+//   				{
+//     				name: "Amala Sky",
+//     				location: "Bodija, Ibadan",
+//     				menu: {
+//       				swallow: ["Amala", "Eba", "Pounded Yam", "Fufu"],
+//      				 meats: ["Goat Meat", "Beef", "Shaki", "Ponmo"],
+//       				drinks: ["Coke", "Pepsi", "Zobo", "Water"],
+//       				chinese: {
+//         			rice: ["Fried Rice", "Special Fried Rice", "Shrimp Fried Rice"],
+//         			noodles: ["Chicken Noodles", "Seafood Noodles"],
+//         			sides: ["Spring Rolls", "Dumplings"]
+//       			}
+//     		}
+//   		},
+//   		{
+//     		name: "Tantalizers",
+//     location: "Dugbe, Ibadan",
+//     menu: {
+//       swallow: ["Eba", "Semo", "Wheat"],
+//       meats: ["Chicken", "Beef", "Fish"],
+//       drinks: ["Sprite", "Fanta", "Chapman", "Juice"],
+//       chinese: {
+//         rice: ["Cantonese Rice", "Vegetable Fried Rice"],
+//         noodles: ["Beef Noodles", "Prawn Noodles"],
+//         sides: ["Sweet Corn Soup", "Chicken Wings"]
+//       }
+//     }
+//   },
+//   {
+//     name: "Mama Ope Restaurant",
+//     location: "Ring Road, Ibadan",
+//     menu: {
+//       swallow: ["Amala", "Fufu", "Lafun"],
+//       meats: ["Goat Meat", "Fish", "Chicken", "Intestine"],
+//       drinks: ["Coke", "Pepsi", "Malt", "Water"],
+//       chinese: {
+//         rice: ["Egg Fried Rice", "Chicken Fried Rice"],
+//         noodles: ["Vegetable Noodles", "Shrimp Noodles"],
+//         sides: ["Wonton", "Spicy Tofu"]
+//       }
+//     }
+//   },
+//   {
+//     name: "Koko Dome",
+//     location: "Cocoa House, Dugbe, Ibadan",
+//     menu: {
+//       swallow: ["Pounded Yam", "Eba", "Fufu"],
+//       meats: ["Beef", "Turkey", "Catfish"],
+//       drinks: ["Chapman", "Smirnoff Ice", "Coke", "Water"],
+//       chinese: {
+//         rice: ["Yangzhou Fried Rice", "Pineapple Fried Rice"],
+//         noodles: ["Chicken Chow Mein", "Beef Chow Mein"],
+//         sides: ["Spring Rolls", "Samosa"]
+//       }
+//     }
+//   },
+//   {
+//     name: "Mr Bigg’s",
+//     location: "Challenge, Ibadan",
+//     menu: {
+//       swallow: ["Semo", "Eba", "Fufu"],
+//       meats: ["Chicken", "Beef", "Turkey"],
+//       drinks: ["Fanta", "Pepsi", "Bottled Water", "Malt"],
+//       chinese: {
+//         rice: ["Special Rice", "Fried Rice", "Egg Rice"],
+//         noodles: ["Beef Noodles", "Vegetable Noodles"],
+//         sides: ["Spicy Wings", "Steamed Dumplings"]
+//       }
+//     }
+//   }
+// ];
+
+// console.log(`i want to order two wraps of ${ibadanRestaurants[0].menu.swallow[2]}, one big ${ibadanRestaurants[0].menu.meats[0]}, with one cold bottle of ${ibadanRestaurants[0].menu.drinks[2]} from ${ibadanRestaurants[0].name} restaurant located in ${ibadanRestaurants[0].location}`);
+
+// let a = "3";
+// let b = 3;
+// let c = 2;
+// alert(a==b || b > c);
+
+// // let car=toyota, make=matrix, brand=2014, color=ash;
+
+// let vote;
+// let age=prompt("Enter your age");
+// vote=age>=18? "can vote":"can not vote";
+
+// console.log(`You ${vote}`);
+
+// alert(Boolean(" "));
+// alert(Boolean(""));
+// alert(Boolean(0));
+// alert(Boolean("0"));
+// alert(Boolean(false));
+// alert(Boolean("false"));
+// alert(Boolean(null));
+// alert(Boolean(undefined));
+// alert(Boolean(NaN));
+
+// let age = Number(prompt("Enter your age: 18?"));
+// let gender = prompt("Enter your gender (male/female)");
+
+// if(!age){
+// 	alert("Please enter a valid age");
+// }
+
+// if(gender!="female" && gender!="male"){
+// 	alert("Please enter a valid gender");
+// }else if(age < 18){
+// 	alert("You can only take water")
+// }else if(age >= 18  && gender=="female"){
+// 	alert("you may take soft drink or water");	
+// }else if(age >= 18 && gender=="male"){
+// 	alert("you may take any drink including beer");
+// }else{
+// 	alert("No drink for you");
+// }
+
+// let questionthree= Number(prompt("what is 11 % 3 ?"));
+
+// switch(questionthree){
+// 	case 1:
+// 		alert("the answer is more than 1");
+// 		break;
+// 	case 2:
+// 		alert("correct answer");
+// 		break;
+// 	case 3: 
+// 		alert("the answer is not up to 3");
+// 		break;
+// 	default: 
+// 		alert("incorrect answer");
+// }
+
+// let age = Number(prompt("Enter your age: 18?"));
+// let qualification = prompt("Enter your qualification (degree or no degree)");
+// let apply;
+// if(!age){
+// 	apply="Please enter a valid age";
+// }else if(qualification!="degree" && qualification!="no degree"){
+// 	apply="you must enter degree or no degree here";
+// }else if(age<22){
+// 	apply="You should still be in school";
+// }else if(age >= 22 && age <= 30 && qualification=="degree"){
+// 	apply="You can apply for the graduate trainee program";
+// }else if(age > 30 && age <= 35 && qualification=="degree"){
+// 	apply="You can apply for operation manager position";
+// }else if(age>30 && age <=35 && qualification=="no degree"){
+// 	apply="you can apply for machine operator position";
+// }else if(age>35 && age<=45 && qualification=="degree"){
+// 	apply="You can apply for Branch Manager position";
+// }else {
+// 	apply="you should be gettinmg ready tomretire by now, cant apply"
+// }
+
+// alert(apply);
+
+// let houroftheday= new Date().getHours();
+// let greeting;
+// if(houroftheday < 12){
+// 	greeting="Good Morning";
+// }else if(houroftheday >= 12){
+// 	greeting="Good Afternoon";	
+// }else if(houroftheday >= 18){
+// 	greeting="Good Evening";		
+// }
+// alert(greeting);
+// if(!age){
+// 	alert("Please enter a valid age");
+// }else if(age < 18){
+// 	alert("You are not eligible to vote");
+// }else if(age >= 18 && age <= 65){
+// 	alert("You are eligible to vote");
+// }else{
+// 	alert("You are eligible to vote but you are above the age limit");
+// }
+
+
+
+
+
+
+			// let guests=`Our Guests are:
+			// *Ayomide,
+			// *John,
+			// *Korede,
+			// *Daniel `
+
+			// let foodAmount= 10e2;
+			// foodAmount= null;
+			// let plateAmount= "no amount";
+			// let drinkAmount= 2.005;
+			// let totalSpent = foodAmount + drinkAmount;
+			// let totalGuests= 34567/0;
+			// let subAmount=null;
+			// let isLoggedin= true;
+			// console.log(subAmount);
+			 
+		</script>
+		
+	</body>
+</html>
